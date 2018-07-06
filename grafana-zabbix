@@ -3,3 +3,4 @@
 1 grafana-cli plugins list-remote
 2 grafana-cli plugins install alexanderzobnin-zabbix-app
 3 service grafana-server restart
+4 配置数据源 http://docs.grafana-zabbix.org/installation/configuration/
