@@ -1,3 +1,15 @@
 # grafana安装配置
 1 wget https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.2.0-1.x86_64.rpm 
 2 yum localinstall grafana-4.2.0-1.x86_64.rpm
+3 Sysv方式启动Grafana
+
+$ service grafana-server start
+$ chkconfig --add grafana-server
+Systemd方式启动Grafana
+
+$ systemctl daemon-reload
+$ systemctl start grafana-server
+$ systemctl status grafana-server
+
+4 支持的数据源位置 /usr/share/grafana/public/app/plugins/datasource/
+
